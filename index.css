@@ -1,0 +1,213 @@
+#bg {
+   width: 102%;
+   height: 50rem;
+   margin-top: -1rem;
+  margin-left: -22px;
+  
+}
+header {
+ display: block;
+  
+}
+.header {
+ font-family: "Roboto", sans-serif;
+font-size: 20px;
+color: white;
+position: absolute;
+margin-top: 0px;
+display: flex;
+position: fixed;
+}
+
+#button1 {
+  position: absolute;
+  left: 55%;
+  bottom: 50%;
+   width: 200px;
+  height: 70px;
+   border-radius: 15px;
+     font-family: "Bebas Neue", sans-serif; 
+  font-size: 20px;
+  text-transform: uppercase;
+  color: white;
+  background-color: #e50914; 
+  border: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+  cursor: pointer;
+   border: 3px solid rgb(0, 0, 0);
+}
+#button2 {
+  position: absolute;
+  right: 55%;
+  bottom: 50%;
+   width: 200px;
+  height: 70px;
+   border-radius: 15px;
+     font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: white;
+  background-color: #e50914; 
+  border: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+  cursor: pointer;
+   border: 3px solid rgb(0, 0, 0);
+  
+}
+
+h1 {
+    font-family: "Bebas Neue", sans-serif; 
+  font-size: 30px;
+  letter-spacing: 4px;
+  color: #e50914; 
+  text-transform: uppercase;
+}
+
+
+
+
+/* ===== SLIDER ===== */
+.slider {
+ 
+  position: absolute;
+  overflow: hidden;
+  margin-top: -20rem;
+  margin-left: 100px;
+}
+
+.slides {
+  width: 120%;
+  height: 80%;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 100%;
+  transition: 0.7s;
+  position: relative;
+}
+
+.slide img {
+  width: 20rem;
+  height: auto;
+  object-fit: cover;
+
+}
+
+
+
+
+/* ===== Khi bấm radio, trượt ảnh ===== */
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+#radio2:checked ~ .first {
+  margin-left: -100%;
+}
+#radio3:checked ~ .first {
+  margin-left: -200%;
+}
+
+
+
+
+
+
+.manual-btn:hover {
+  background: #e50914;
+}
+
+/* ===== Nút trái/phải ===== */
+.navigation-auto label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 40px;
+  padding: 5px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navigation-auto label:hover {
+  background: #e50914;
+}
+
+.navigation-auto .prev {
+  left: 20px;
+}
+
+.navigation-auto .next {
+  right: 20px;
+}
+
+
+#imgf {
+    width: 20rem;
+    height: auto;
+}
+.footer {
+  background: linear-gradient(180deg, #111 0%, #000 100%);
+  color: white;
+  padding: 50px 80px;
+  font-family: "Roboto", sans-serif;
+  margin-top: -2rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 28px;
+  color: #e50914;
+  margin-bottom: 15px;
+}
+
+.footer h4 {
+  font-size: 20px;
+  color: #e50914;
+  margin-bottom: 10px;
+}
+
+.footer p, 
+.footer ul {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin: 5px 0;
+}
+
+.footer ul li a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+  color: #e50914;
+}
+
+
+
+
