@@ -1,0 +1,116 @@
+#movieList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 4rem;
+  padding: 4rem 6rem;
+  margin-top: 12rem;
+}
+
+#movieList .movie-card {
+  background: #111;
+  
+  
+  transition: transform 0.3s ease;
+}
+
+#movieList .movie-card img {
+  width: 100%;
+  height: 320px;
+  
+  
+}
+
+#movieList .movie-card:hover {
+  transform: scale(1.05);
+}
+
+#movieList .movie-card h3 {
+  font-size: 18px;
+  text-align: center;
+  
+  color: #e50914;
+}
+
+#movieList .movie-card p {
+  font-size: 14px;
+  color: #ccc;
+    padding: 0 10px 10px;
+    
+
+}
+.btn {
+      font-size: 20px;
+  font-weight: bold;
+  padding: 14px 35px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+    }
+#searching {
+  margin-left: 30rem;
+  font-size: 30px;
+  margin-top: -2rem;
+  position: absolute;
+}
+.btn-finding {
+  background: rgba(109, 109, 110, 0.7);
+  color: white;
+  position: absolute;
+  margin-top: -2.3rem;
+  margin-left: 55rem;
+}
+
+.btn-finding:hover {
+  background: rgb(207, 14, 14);
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background: url("https://dnm.nflximg.net/api/v6/BvVbc2Wxr2w6QuoANoSpJKEIWjQ/AAAAQdQ4D5f06hwpaidsY9KKcxa4GoJMsKe14Sb39w4R5pRkgpkJmpnPuL2d6JkbK-O_wan_OixsRzgH11VOp-UUdMCMtq6_QMxPUHbUgikOgOVKnCmaDQmp2iI9QMRaWsu4jOD6JRD6DBH_WKiR9tD5boxIz0k.jpg?r=261") no-repeat center center fixed;
+  background-size: cover;
+  
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 50px;
+  z-index: 1000;
+  
+}
+.nav-logo {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 36px;
+  color: #e50914;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  margin-right: 50rem;
+  display: flex;
+  gap: 30px;
+
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+ 
+}
+
+.nav-links li a:hover {
+  color: #e50914;
+}
+h5 {
+    font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  
+}

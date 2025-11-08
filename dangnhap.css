@@ -1,0 +1,66 @@
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('https://dnm.nflximg.net/api/v6/BvVbc2Wxr2w6QuoANoSpJKEIWjQ/AAAAQdQ4D5f06hwpaidsY9KKcxa4GoJMsKe14Sb39w4R5pRkgpkJmpnPuL2d6JkbK-O_wan_OixsRzgH11VOp-UUdMCMtq6_QMxPUHbUgikOgOVKnCmaDQmp2iI9QMRaWsu4jOD6JRD6DBH_WKiR9tD5boxIz0k.jpg?r=261') ;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-container {
+      background: rgba(0, 0, 0, 0.75);
+      padding: 60px 68px;
+      border-radius: 8px;
+      width: 350px;
+      color: white;
+    }
+
+    h1 {
+  
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 36px;
+  color: #e50914;
+  letter-spacing: 2px;
+position: absolute;
+margin-top: -35rem;
+}
+
+  
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      background: #333;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      font-size: 16px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #e50914;
+      color: white;
+      
+      border-radius: 4px;
+      font-size: 16px;
+      margin-top: 15px;
+      
+    }
+
+    button:hover {
+      background-color: #f6121d;
+    }
+   a {
+    position: absolute;
+    font-family: "Bebas Neue", sans-serif;
+  font-size: 16px;
+  color: #e50914;
+  text-decoration: none;
+  margin-top: 20rem;
+   }
+
+    
