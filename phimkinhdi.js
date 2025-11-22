@@ -1,48 +1,44 @@
-// API phim Việt Nam 
-const API_VIET ="https://api.themoviedb.org/3/discover/movie?api_key=d728411e9adacca95e15c89b77250508&with_origin_country=VN&language=vi-VN";
+// API phim KINH DỊ 
+const API_HORROR = "https://api.themoviedb.org/3/discover/movie?api_key=d728411e9adacca95e15c89b77250508&with_genres=27&language=vi-VN";
 
-// Mảng lưu phim Việt
-let danhSachPhim = [];
+// Mảng phim kinh dị
+let danhSachHorror = [];
 
-// Khi trang tải xong → tải phim Việt
+// Khi trang tải xong → tải phim kinh dị
 window.onload = function () {
   console.log("Trang đã tải xong ✅");
-  taiPhimViet();
+  taiPhimKinhDi();
 };
 
-// ===========================
-//  HÀM TẢI PHIM VIỆT NAM
-// ===========================
-async function taiPhimViet() {
+//  HÀM TẢI PHIM KINH DỊ
+
+async function taiPhimKinhDi() {
   const khung = document.getElementById("movieList");
-  khung.innerHTML = "<p>Đang tải phim Việt...</p>";
+  khung.innerHTML = "<p>Đang tải phim kinh dị...</p>";
 
   try {
-    const res = await fetch(API_VIET);
-    if (!res.ok) throw new Error("Lỗi tải phim Việt!");
+    const res = await fetch(API_HORROR);
+    if (!res.ok) throw new Error("Lỗi tải phim kinh dị!");
 
     const data = await res.json();
 
-    console.log("Tải được", data.results.length, "phim Việt");
-
-    danhSachPhim = data.results.map(phim => ({
+    danhSachHorror = data.results.map(phim => ({
       title: phim.title,
       image: `https://image.tmdb.org/t/p/w300${phim.poster_path}`,
       release_date: phim.release_date,
       director: "Đang cập nhật",
     }));
 
-    renderFilms(danhSachPhim);
+    renderFilms(danhSachHorror);
 
   } catch (err) {
     console.error(err);
-    khung.innerHTML = "<p>Lỗi khi tải phim Việt.</p>";
+    khung.innerHTML = "<p>Lỗi khi tải phim kinh dị.</p>";
   }
 }
 
-// ===========================
 //  HÀM HIỂN THỊ PHIM
-// ===========================
+
 function renderFilms(list) {
   const khung = document.getElementById("movieList");
   khung.innerHTML = "";
@@ -62,24 +58,23 @@ function renderFilms(list) {
   });
 }
 
-// ===========================
-//  HÀM TÌM KIẾM PHIM VIỆT
-// ===========================
+//  HÀM TÌM KIẾM PHIM
+
 function timKiemPhim() {
   const tuKhoa = document.getElementById("searching").value.toLowerCase().trim();
 
   if (tuKhoa === "") {
-    renderFilms(danhSachPhim);
+    renderFilms(danhSachHorror);
     return;
   }
 
-  const ketQua = danhSachPhim.filter(phim =>
+  const ketQua = danhSachHorror.filter(phim =>
     phim.title.toLowerCase().includes(tuKhoa)
   );
 
   if (ketQua.length === 0) {
     document.getElementById("movieList").innerHTML =
-      "<h5>Không tìm thấy phim Việt nào!</h5>";
+      "<h5>Không tìm thấy phim nào!</h5>";
   } else {
     renderFilms(ketQua);
   }

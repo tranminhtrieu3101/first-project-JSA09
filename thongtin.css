@@ -1,0 +1,176 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 50px;
+  z-index: 1000;
+  
+}
+
+.nav-logo {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 36px;
+  color: #e50914;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  margin-right: 50rem;
+  display: flex;
+  gap: 30px;
+
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+ 
+}
+
+.nav-links li a:hover {
+  color: #e50914;
+}
+ 
+ 
+ 
+ body {
+ 
+  background: url("https://dnm.nflximg.net/api/v6/BvVbc2Wxr2w6QuoANoSpJKEIWjQ/AAAAQdQ4D5f06hwpaidsY9KKcxa4GoJMsKe14Sb39w4R5pRkgpkJmpnPuL2d6JkbK-O_wan_OixsRzgH11VOp-UUdMCMtq6_QMxPUHbUgikOgOVKnCmaDQmp2iI9QMRaWsu4jOD6JRD6DBH_WKiR9tD5boxIz0k.jpg?r=261") no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.55);
+  z-index: -1;
+}
+
+.intro-container {
+  width: 80%;
+  margin: 150px auto 50px auto; 
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.65);
+  border-radius: 20px;
+ 
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  
+}
+
+.intro-container h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 48px;
+  letter-spacing: 2px;
+  color: #e50914;
+
+  text-align: center;
+}
+
+.intro-container p {
+  font-size: 20px;
+  
+  color: #eee;
+  
+}
+
+.intro-highlight {
+  color: #e50914;
+  
+}
+.guide-container {
+  width: 80%;
+  margin: 50px auto;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.65);
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+}
+
+.guide-container h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 42px;
+  letter-spacing: 2px;
+  color: #e50914;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.guide-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.guide-list li {
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px 20px;
+  border-left: 5px solid #e50914;
+  margin: 12px 0;
+  border-radius: 10px;
+  line-height: 1.6;
+  transition: 0.3s;
+}
+
+.guide-list li:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateX(5px);    
+}
+ /* translate thay đổi vị trí */
+
+ /* Ẩn menu trước */
+.dropdown-menu {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: rgba(0,0,0,0.85);
+  border-radius: 10px;
+  padding: 10px 0;
+  
+  min-width: 180px;
+  display: none;   /* Ẩn mặc định */
+ top:100%
+}
+
+/* Hiện menu khi hover vào mục Phim mới */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Style item trong dropdown */
+.dropdown-menu li {
+  padding: 10px 20px;
+}
+
+.dropdown-menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  background: #e50914;
+  color: white;
+}
+.nav-links li {
+  position: relative; /* để menu con bám vào */
+}
+#inform {
+  width: 80rem;
+  height: auto;
+}
